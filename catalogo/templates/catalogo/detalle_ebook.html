@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ ebook.titulo }}</title>
+</head>
+<body>
+    <h1>{{ ebook.titulo }}</h1>
+    <p><strong>Autor:</strong> {{ ebook.autor_nombre }}</p>
+    <p><strong>Categoría:</strong> {{ ebook.categoria }}</p>
+    <p><strong>Descripción:</strong> {{ ebook.descripcion }}</p>
+
+    <h3>Capítulos:</h3>
+    <ul>
+    {% for cap in ebook.capitulos.all %}
+        <li><strong>{{ cap.titulo }}:</strong> {{ cap.contenido }}</li>
+    {% empty %}
+        <li>Este libro aún no tiene capítulos.</li>
+    {% endfor %}
+    </ul>
+
+    <a href="{% url 'lista_ebooks' %}">← Volver al catálogo</a>
+</body>
+</html>

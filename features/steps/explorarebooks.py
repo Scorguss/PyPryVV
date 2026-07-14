@@ -16,8 +16,8 @@ def step_ebook_publicado(context, titulo):
     raise StepNotImplementedError()
 
 
-@given('que existe un eBook en estado "{estado}"')
-def step_ebook_estado(context, estado):
+##@given('que existe un eBook en estado "{estado}"')
+##def step_ebook_explorar(context, estado):
     raise StepNotImplementedError()
 
 

@@ -12,7 +12,7 @@ def step_usuario_autenticado(context, rol):
 
 
 @given('que existe un eBook en estado "{estado}"')
-def step_ebook_estado(context, estado):
+def step_ebook_gestionar(context, estado):
     raise StepNotImplementedError()
 
 

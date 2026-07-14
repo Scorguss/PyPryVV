@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo Académico</title>
+</head>
+<body>
+    <h1>Catálogo Académico de eBooks</h1>
+
+    <!-- Formulario de Búsqueda -->
+    <form method="GET" action="">
+        <input type="text" name="q" placeholder="Buscar por título o autor..." value="{{ query|default:'' }}">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <hr>
+
+    {% if ebooks %}
+        <ul>
+        {% for ebook in ebooks %}
+            <li>
+                <a href="{% url 'detalle_ebook' ebook.pk %}"><strong>{{ ebook.titulo }}</strong></a>
+                — Autor: {{ ebook.autor_nombre }} | Categoría: {{ ebook.categoria }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontraron resultados para tu búsqueda.</p>
+    {% endif %}
+</body>
+</html>
