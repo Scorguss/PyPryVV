@@ -1,0 +1,61 @@
+Proyecto: Librería Digital Estudiantil
+Referencia: An Interactive Online Digital Library for Students - XB Software
+
+Vision:
+
+PARA: Estudiantes y docentes.
+QUE NECESITAN: Acceder a material académico para apoyar el aprendizaje de sus asignaturas.
+NUESTRO PRODUCTO: Una biblioteca digital interactiva.
+QUE PERMITE: Crear, organizar y compartir material académico en un entorno digital.
+A DIFERENCIA DE: Las bibliotecas tradicionales donde solo se puede consultar contenido.
+NUESTRO PRODUCTO: Facilita el acceso a estos recursos académicos, así como su creación y distribución con la comunidad.
+
+Objetivos:
+
+Facilitar que estudiantes y docentes encuentren, creen, organicen y compartan recursos académicos
+para apoyar el aprendizaje de sus asignaturas dentro de un entorno digital común.
+
+Capabilities:
+Construcción de recursos académicos
+Descubrimiento de recursos académicos
+Gestión del espacio personal de estudio
+Valoración y moderación de recursos académicos
+
+Reglas de negocio:
+
+RN-001: Solo los usuarios con rol Autor pueden crear eBooks.
+RN-002: Todo eBook debe tener un título y una descripción antes de publicarse.
+RN-003: Un eBook debe contener al menos un capítulo para ser publicado.
+RN-004: El título del eBook debe ser único dentro del catálogo.
+RN-005: Antes de publicarse, el eBook debe estar en estado Borrador.
+RN-006: Un eBook publicado pasa automáticamente al estado Publicado.
+
+RN-007: Solo se muestran recursos con estado Publicado.
+RN-008: La búsqueda debe permitir filtrar por título, autor, categoría y palabras clave.
+RN-009: Los resultados deben mostrarse ordenados por relevancia o fecha de publicación.
+RN-010: Los recursos restringidos solo son visibles para usuarios autorizados.
+RN-011: Si no existen resultados, el sistema debe informar que no se encontraron coincidencias.
+
+RN-012: Solo usuarios autenticados pueden crear colecciones personales.
+RN-013: Un mismo recurso no puede agregarse dos veces a la misma colección.
+RN-014: Un recurso puede pertenecer a varias colecciones diferentes del mismo usuario.
+RN-015: Cada usuario únicamente puede modificar sus propias colecciones.
+RN-016: La eliminación de una colección no elimina los recursos originales del catálogo.
+
+RN-017: Solo usuarios autenticados pueden crear anotaciones.
+RN-018: Cada anotación pertenece únicamente a su autor.
+RN-019: Las anotaciones son privadas por defecto.
+RN-020: Un usuario puede editar o eliminar únicamente sus propias anotaciones.
+RN-021: Las anotaciones deben asociarse a un recurso académico existente.
+
+Features:
+
+Crear y publicar eBooks:
+
+Explorar catálogo académico:
+
+Organizar recursos personales:
+
+Realizar anotaciones académicas:
+
+$$Valorar y reportar recursos:$$
